@@ -30,6 +30,8 @@ To define fields that can be bound to data we use `dataRoles` which takes an arr
     * 2 `GroupingOrMeasure` - Can be used as either a grouping or measure
 * **displayName** - the name displayed to the user in the properties pane
 * **description** - a short description of the field (optional)
+* **requiredTypes** - the required type of data for this data role. Any values that do not match will be set to null (optional)
+* **preferredTypes** - the preferred type of data for this data role (optional)
 
 ### Example
 
@@ -38,7 +40,9 @@ To define fields that can be bound to data we use `dataRoles` which takes an arr
     {
         "displayName": "My Category Data",
         "name": "myCategory",
-        "kind": 0
+        "kind": 0,
+        "requiredTypes": [ ... ],
+        "preferredTypes": [ ... ]
     },
     {
         "displayName": "My Measure Data",
@@ -108,3 +112,17 @@ By default, a visual doesn't support Advanced Edit Mode, unless stated otherwise
 A visual can define its sorting behavior via its capabilities.
 By default, a visual doesn't support modifying its sorting order unless stated otherwise in the capabilities.json.
 [Learn more about sorting](Sorting.md)
+
+## Data types for visual - `types`
+
+* **bool** - a boolean value that will be displayed to the user as a toggle switch
+* **enumeration** - a list of values that will be displayed as a drop down list contains type object  
+* **fill** - a color value that will be displayed to the user as a color picker
+* **formatting** - a numeric value that will be displayed to the user as a text input
+* **integer** - an integer (whole number) value that will be displayed to the user as a text input
+* **numeric** - a numeric value that will be displayed to the user as a text input
+* **filter** - a array that contains filter value
+* **operations** - a visual operation
+* **text** - a text value that will be displayed to the user as a text input
+* **scripting** - a text value that will be displayed to the user as a script
+* **geography** - a geographical data
