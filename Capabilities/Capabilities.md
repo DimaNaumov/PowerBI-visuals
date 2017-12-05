@@ -124,5 +124,5 @@ By default, a visual doesn't support modifying its sorting order unless stated o
 * **filter** - a array that contains filter value
 * **operations** - a visual operation
 * **text** - a text value that will be displayed to the user as a text input
-* **scripting** - a text value that will be displayed to the user as a script
+* **scripting** - system type for R custom visuals
 * **geography** - a geographical data
