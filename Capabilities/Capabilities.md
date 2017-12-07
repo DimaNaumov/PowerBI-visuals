@@ -116,9 +116,7 @@ By default, a visual doesn't support modifying its sorting order unless stated o
 ## Data types for visual - `types`
 
 * **bool** - a boolean value that will be displayed to the user as a toggle switch
-* **enumeration** - a list of values that will be displayed as a drop down list contains type object  
 * **fill** - a color value that will be displayed to the user as a color picker
-* **formatting** - a numeric value that will be displayed to the user as a text input
 * **integer** - an integer (whole number) value that will be displayed to the user as a text input
 * **numeric** - a numeric value that will be displayed to the user as a text input
 * **filter** - a array that contains filter value
