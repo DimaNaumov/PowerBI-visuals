@@ -132,13 +132,6 @@ To define fields that can be bound to data we use `dataRoles` which takes an arr
 ]
 ```
 
-## Accepted data types in "requiredTypes" and "preferredTypes"
-
-* **bool** - a boolean value that will be displayed to the user as a toggle switch
-* **integer** - an integer (whole number) value that will be displayed to the user as a text input
-* **numeric** - a numeric value that will be displayed to the user as a text input
-* **text** - a text value that will be displayed to the user as a text input
-* **geography** - a geographical data
 
 The above data roles would create the following fields
 
