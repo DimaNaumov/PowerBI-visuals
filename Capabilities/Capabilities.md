@@ -41,16 +41,104 @@ To define fields that can be bound to data we use `dataRoles` which takes an arr
         "displayName": "My Category Data",
         "name": "myCategory",
         "kind": 0,
-        "requiredTypes": [ ... ],
-        "preferredTypes": [ ... ]
+        "requiredTypes": [
+            {
+                "text": true
+            },
+            {
+                "numeric": true
+            },
+            {
+                "integer": true
+            }
+        ],
+        "preferredTypes": [
+            {
+                "text": true
+            }
+        ]
     },
     {
         "displayName": "My Measure Data",
         "name": "myMeasure",
-        "kind": 1
+        "kind": 1,
+        "requiredTypes": [
+            {
+                "integer": true
+            },
+            {
+                "numeric": true
+            }
+        ],
+        "preferredTypes": [
+            {
+                "integer": true
+            }
+        ]
+    },
+    {
+        "displayNameKey": "Visual_Location",
+        "name": "Locations",
+        "kind": "Measure",
+        "displayName": "Locations",
+        "requiredTypes": [
+            {
+                "geography": {
+                    "address": true
+                }
+            },
+            {
+                "geography": {
+                    "city": true
+                }
+            },
+            {
+                "geography": {
+                    "continent": true
+                }
+            },
+            {
+                "geography": {
+                    "country": true
+                }
+            },
+            {
+                "geography": {
+                    "county": true
+                }
+            },
+            {
+                "geography": {
+                    "place": true
+                }
+            },
+            {
+                "geography": {
+                    "postalCode": true
+                }
+            },
+            {
+                "geography": {
+                    "region": true
+                }
+            },
+            {
+                "geography": {
+                    "stateOrProvince": true
+                }
+            }
+        ]
     }
 ]
 ```
+
+## Accepted data types in "requiredTypes" and "preferredTypes"
+
+* **bool** - a boolean value that will be displayed to the user as a toggle switch
+* **integer** - an integer (whole number) value that will be displayed to the user as a text input
+* **numeric** - a numeric value that will be displayed to the user as a text input
+* **text** - a text value that will be displayed to the user as a text input
+* **geography** - a geographical data
 
 The above data roles would create the following fields
 
@@ -112,15 +200,3 @@ By default, a visual doesn't support Advanced Edit Mode, unless stated otherwise
 A visual can define its sorting behavior via its capabilities.
 By default, a visual doesn't support modifying its sorting order unless stated otherwise in the capabilities.json.
 [Learn more about sorting](Sorting.md)
-
-## Data types for visual - `types`
-
-* **bool** - a boolean value that will be displayed to the user as a toggle switch
-* **fill** - a color value that will be displayed to the user as a color picker
-* **integer** - an integer (whole number) value that will be displayed to the user as a text input
-* **numeric** - a numeric value that will be displayed to the user as a text input
-* **filter** - a array that contains filter value
-* **operations** - a visual operation
-* **text** - a text value that will be displayed to the user as a text input
-* **scripting** - system type for R custom visuals
-* **geography** - a geographical data
