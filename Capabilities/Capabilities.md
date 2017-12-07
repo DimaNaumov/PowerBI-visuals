@@ -36,9 +36,9 @@ To define fields that can be bound to data we use `dataRoles` which takes an arr
 ## Accepted data types in "requiredTypes" and "preferredTypes"
 
 * **bool** - a logical value
-* **integer** - an integer (whole number) value that will be displayed to the user as a text input
-* **numeric** - a numeric value that will be displayed to the user as a text input
-* **text** - a text value that will be displayed to the user as a text input
+* **integer** - an integer (whole number) value
+* **numeric** - a numeric value
+* **text** - a text value
 * **geography** - a geographical data
 
 ### Example
