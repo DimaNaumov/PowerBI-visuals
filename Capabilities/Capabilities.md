@@ -33,6 +33,14 @@ To define fields that can be bound to data we use `dataRoles` which takes an arr
 * **requiredTypes** - the required type of data for this data role. Any values that do not match will be set to null (optional)
 * **preferredTypes** - the preferred type of data for this data role (optional)
 
+## Accepted data types in "requiredTypes" and "preferredTypes"
+
+* **bool** - a boolean value that will be displayed to the user as a toggle switch
+* **integer** - an integer (whole number) value that will be displayed to the user as a text input
+* **numeric** - a numeric value that will be displayed to the user as a text input
+* **text** - a text value that will be displayed to the user as a text input
+* **geography** - a geographical data
+
 ### Example
 
 ```json
