@@ -33,13 +33,13 @@ To define fields that can be bound to data we use `dataRoles` which takes an arr
 * **requiredTypes** - the required type of data for this data role. Any values that do not match will be set to null (optional)
 * **preferredTypes** - the preferred type of data for this data role (optional)
 
-## Accepted data types in "requiredTypes" and "preferredTypes"
+## Valid data types in "requiredTypes" and "preferredTypes"
 
-* **bool** - a logical value
+* **bool** - a boolean value
 * **integer** - an integer (whole number) value
 * **numeric** - a numeric value
 * **text** - a text value
-* **geography** - a geographical data
+* **geography** - a geographic data
 
 ### Example
 
